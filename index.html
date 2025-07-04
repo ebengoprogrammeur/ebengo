@@ -1,15 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Site web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 30px;
+      background: linear-gradient(135deg, #0f0f0f, #222);
+      position: relative;
+    }
+
+    header img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffe0;
+      box-shadow: 0 0 15px #00ffe0;
+      transition: transform 0.3s ease;
+    }
+    .photo-profil:hover {
+    transform: scale(1.1); /* effet d’agrandissement au survol */
+    }
+    
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    header h1 {
+      margin-top: 15px;
+      font-size: 2em;
+      color: #00ffff;
+    }
+
+    header p {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      }
+
+    h2 {
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .skills span, .project {
+      display: inline-block;
+      background: #222;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00ffff;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #00cccc;
+    }
+    button {
+      background: #00cccc; 
+      padding: 100;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #000;
+      color: #888;
+    }
+
+    @media(max-width: 600px) {
+      header h1 { font-size: 1.5em; }
+      header img { width: 90px; height: 90px; }
+    }
+  </style>
 </head>
 <body>
-    <img src="ma-photo.jpg">
-    <h1>EBENGO</h1>
-    <button>Contactez moi</button>
+
+  <header>
+    <img src="ilewa.jpg" alt="Photo de profil" />
+    <h1>Moineur Ilewa</h1>
+    <p>Développeur Web & Mobile</p>
+  </header>
+
+  <section>
+    <h2>À propos</h2>
+    <p>Je suis passionné par la programmation, le développement web et la création d'applications utiles. Mon objectif est de résoudre des problèmes réels à travers la technologie.</p>
+  </section>
+
+  <section>
+    <h2>Compétences</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projets</h2>
+    <div class="project">Application de gestion scolaire</div>
+    <div class="project">Portfolio personnel</div>
+    <div class="project">Système de présence en ligne</div>
+     <div class="project">Système de gestion des crédits non validés</div>
+  </section>
+
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: moineurilewa@email.com</p>
+    <button onclick="location='https://wa.me/243825921468'">Contactez moi</button>
+  </section>
+
+  <footer>
+    &copy; 2025 - Mon Portfolio
+  </footer>
+
 </body>
-</html>
+</htm>
